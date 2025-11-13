@@ -11,4 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY src/train.py ./train.py
 
-CMD ["python", "train.py"]
+ENV DATASET_DIR=/datasets \
+    OUTPUT_PATH=/mnt/model/model.pkl
+
+CMD ["python", "train.py", "--output", "/mnt/model/model.pkl"]
