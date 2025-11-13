@@ -1,0 +1,28 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: playlist-ml-ds1-v1
+  namespace: matheuslima
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: playlist-ml
+          image: vazleal/playlist-ml:0.1
+          env:
+            - name: OUTPUT_PATH
+              value: "/mnt/model/model.pkl"
+          volumeMounts:
+            - name: model-volume
+              mountPath: /mnt/model
+            - name: dataset-volume
+              mountPath: /data
+      volumes:
+        - name: model-volume
+          persistentVolumeClaim:
+            claimName: project2-pvc
+        - name: dataset-volume
+          hostPath:
+            path: /home/datasets/spotify
+            type: Directory

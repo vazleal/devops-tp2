@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: playlist-api-deployment
+  namespace: matheuslima
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: playlist-api
+  template:
+    metadata:
+      labels:
+        app: playlist-api
+    spec:
+      containers:
+        - name: playlist-api
+          image: vazleal/playlist-api:0.1
+          env:
+            - name: MODEL_PATH
+              value: "/mnt/model/model.pkl"
+            - name: VERSION
+              value: "0.1.0"
+          ports:
+            - containerPort: 5000
+          volumeMounts:
+            - name: model-volume
+              mountPath: /mnt/model
+      volumes:
+        - name: model-volume
+          persistentVolumeClaim:
+            claimName: project2-pvc
