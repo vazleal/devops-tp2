@@ -17,7 +17,7 @@ spec:
             - name: model-volume
               mountPath: /mnt/model
             - name: dataset-volume
-              mountPath: /data
+              mountPath: /datasets
       volumes:
         - name: model-volume
           persistentVolumeClaim:
