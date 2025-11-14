@@ -1,0 +1,296 @@
+metadata:
+  creationTimestamp: "2025-11-14T00:49:15Z"
+  generation: 280
+  managedFields:
+  - apiVersion: argoproj.io/v1alpha1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:spec:
+        .: {}
+        f:destination:
+          .: {}
+          f:namespace: {}
+          f:server: {}
+        f:project: {}
+        f:source:
+          .: {}
+          f:path: {}
+          f:repoURL: {}
+        f:syncPolicy:
+          .: {}
+          f:automated: {}
+      f:status:
+        .: {}
+        f:health: {}
+        f:sourceHydrator: {}
+        f:summary: {}
+        f:sync:
+          .: {}
+          f:comparedTo:
+            .: {}
+            f:destination: {}
+            f:source: {}
+    manager: argocd-server
+    operation: Update
+    time: "2025-11-14T02:52:02Z"
+  - apiVersion: argoproj.io/v1alpha1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:controllerNamespace: {}
+        f:health:
+          f:lastTransitionTime: {}
+          f:status: {}
+        f:history: {}
+        f:operationState:
+          .: {}
+          f:finishedAt: {}
+          f:message: {}
+          f:operation:
+            .: {}
+            f:initiatedBy:
+              .: {}
+              f:automated: {}
+            f:retry:
+              .: {}
+              f:limit: {}
+            f:sync:
+              .: {}
+              f:revision: {}
+          f:phase: {}
+          f:startedAt: {}
+          f:syncResult:
+            .: {}
+            f:resources: {}
+            f:revision: {}
+            f:source:
+              .: {}
+              f:path: {}
+              f:repoURL: {}
+        f:reconciledAt: {}
+        f:resourceHealthSource: {}
+        f:resources: {}
+        f:sourceType: {}
+        f:summary:
+          f:images: {}
+        f:sync:
+          f:comparedTo:
+            f:destination:
+              f:namespace: {}
+              f:server: {}
+            f:source:
+              f:path: {}
+              f:repoURL: {}
+          f:revision: {}
+          f:status: {}
+    manager: argocd-application-controller
+    operation: Update
+    time: "2025-11-14T02:53:19Z"
+  name: playlist-recommender-vazleal
+  namespace: argocd
+  resourceVersion: "18549251"
+  uid: bcee0ce8-f8b0-4457-8047-8a0047b353b6
+spec:
+  destination:
+    namespace: matheuslima
+    server: https://kubernetes.default.svc
+  project: matheuslima-project
+  source:
+    path: k8s
+    repoURL: https://github.com/vazleal/devops-tp2.git
+  syncPolicy:
+    automated: {}
+status:
+  controllerNamespace: argocd
+  health:
+    lastTransitionTime: "2025-11-14T02:50:11Z"
+    status: Healthy
+  history:
+  - deployStartedAt: "2025-11-14T01:11:06Z"
+    deployedAt: "2025-11-14T01:11:07Z"
+    id: 0
+    initiatedBy:
+      username: matheuslima
+    revision: 9149c8372e9150e1ad0686a28c69c3a58484e133
+    source:
+      path: k8s
+      repoURL: https://github.com/vazleal/devops-tp2.git
+  - deployStartedAt: "2025-11-14T01:32:39Z"
+    deployedAt: "2025-11-14T01:32:40Z"
+    id: 1
+    initiatedBy:
+      username: matheuslima
+    revision: dbb83318d371feffd7c953d64657f270d09a55cf
+    source:
+      path: k8s
+      repoURL: https://github.com/vazleal/devops-tp2.git
+  - deployStartedAt: "2025-11-14T01:46:22Z"
+    deployedAt: "2025-11-14T01:46:23Z"
+    id: 2
+    initiatedBy:
+      automated: true
+    revision: 3dbbebea75d66a06d43aac6438a61c764255a63e
+    source:
+      path: k8s
+      repoURL: https://github.com/vazleal/devops-tp2.git
+  - deployStartedAt: "2025-11-14T01:47:41Z"
+    deployedAt: "2025-11-14T01:47:41Z"
+    id: 3
+    initiatedBy:
+      username: matheuslima
+    revision: 3dbbebea75d66a06d43aac6438a61c764255a63e
+    source:
+      path: k8s
+      repoURL: https://github.com/vazleal/devops-tp2.git
+  - deployStartedAt: "2025-11-14T01:48:45Z"
+    deployedAt: "2025-11-14T01:48:45Z"
+    id: 4
+    initiatedBy:
+      username: matheuslima
+    revision: 3dbbebea75d66a06d43aac6438a61c764255a63e
+    source:
+      path: k8s
+      repoURL: https://github.com/vazleal/devops-tp2.git
+  - deployStartedAt: "2025-11-14T02:25:45Z"
+    deployedAt: "2025-11-14T02:25:46Z"
+    id: 5
+    initiatedBy:
+      username: matheuslima
+    revision: 3dbbebea75d66a06d43aac6438a61c764255a63e
+    source:
+      path: k8s
+      repoURL: https://github.com/vazleal/devops-tp2.git
+  - deployStartedAt: "2025-11-14T02:26:35Z"
+    deployedAt: "2025-11-14T02:26:35Z"
+    id: 6
+    initiatedBy:
+      username: matheuslima
+    revision: 3dbbebea75d66a06d43aac6438a61c764255a63e
+    source:
+      path: k8s
+      repoURL: https://github.com/vazleal/devops-tp2.git
+  - deployStartedAt: "2025-11-14T02:29:39Z"
+    deployedAt: "2025-11-14T02:29:39Z"
+    id: 7
+    initiatedBy:
+      username: matheuslima
+    revision: 3dbbebea75d66a06d43aac6438a61c764255a63e
+    source:
+      path: k8s
+      repoURL: https://github.com/vazleal/devops-tp2.git
+  - deployStartedAt: "2025-11-14T02:33:35Z"
+    deployedAt: "2025-11-14T02:33:36Z"
+    id: 8
+    initiatedBy:
+      automated: true
+    revision: 29627b8bfa3b63c8c5d08836dfc6543b4ba4478a
+    source:
+      path: k8s
+      repoURL: https://github.com/vazleal/devops-tp2.git
+  operationState:
+    finishedAt: "2025-11-14T02:33:36Z"
+    message: successfully synced (all tasks run)
+    operation:
+      initiatedBy:
+        automated: true
+      retry:
+        limit: 5
+      sync:
+        revision: 29627b8bfa3b63c8c5d08836dfc6543b4ba4478a
+    phase: Succeeded
+    startedAt: "2025-11-14T02:33:35Z"
+    syncResult:
+      resources:
+      - group: ""
+        hookPhase: Running
+        kind: PersistentVolumeClaim
+        message: persistentvolumeclaim/project2-pvc unchanged
+        name: project2-pvc
+        namespace: matheuslima
+        status: Synced
+        syncPhase: Sync
+        version: v1
+      - group: ""
+        hookPhase: Running
+        kind: Service
+        message: service/playlist-api-service unchanged
+        name: playlist-api-service
+        namespace: matheuslima
+        status: Synced
+        syncPhase: Sync
+        version: v1
+      - group: apps
+        hookPhase: Running
+        images:
+        - vazleal/playlist-api:0.1
+        kind: Deployment
+        message: deployment.apps/playlist-api-deployment configured
+        name: playlist-api-deployment
+        namespace: matheuslima
+        status: Synced
+        syncPhase: Sync
+        version: v1
+      - group: batch
+        hookPhase: Running
+        images:
+        - vazleal/playlist-ml:0.1
+        kind: Job
+        message: job.batch/playlist-ml-ds1-v1 unchanged
+        name: playlist-ml-ds1-v1
+        namespace: matheuslima
+        status: Synced
+        syncPhase: Sync
+        version: v1
+      revision: 29627b8bfa3b63c8c5d08836dfc6543b4ba4478a
+      source:
+        path: k8s
+        repoURL: https://github.com/vazleal/devops-tp2.git
+  reconciledAt: "2025-11-14T02:53:18Z"
+  resourceHealthSource: appTree
+  resources:
+  - health:
+      status: Healthy
+    kind: PersistentVolumeClaim
+    name: project2-pvc
+    namespace: matheuslima
+    status: Synced
+    version: v1
+  - health:
+      status: Healthy
+    kind: Service
+    name: playlist-api-service
+    namespace: matheuslima
+    status: Synced
+    version: v1
+  - group: apps
+    health:
+      status: Healthy
+    kind: Deployment
+    name: playlist-api-deployment
+    namespace: matheuslima
+    status: Synced
+    version: v1
+  - group: batch
+    health:
+      status: Healthy
+    kind: Job
+    name: playlist-ml-ds1-v1
+    namespace: matheuslima
+    status: Synced
+    version: v1
+  sourceHydrator: {}
+  sourceType: Directory
+  summary:
+    images:
+    - vazleal/playlist-api:0.1
+    - vazleal/playlist-ml:0.1
+  sync:
+    comparedTo:
+      destination:
+        namespace: matheuslima
+        server: https://kubernetes.default.svc
+      source:
+        path: k8s
+        repoURL: https://github.com/vazleal/devops-tp2.git
+    revision: 29627b8bfa3b63c8c5d08836dfc6543b4ba4478a
+    status: Synced
