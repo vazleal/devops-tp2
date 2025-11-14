@@ -9,5 +9,5 @@ spec:
   ports:
     - name: http
       protocol: TCP
-      port: 30502          # porta visível no cluster
-      targetPort: 5000     # porta do Flask dentro do container
+      port: 30502
+      targetPort: 50023

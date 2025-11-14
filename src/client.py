@@ -8,8 +8,7 @@ from typing import Sequence
 
 import requests
 
-DEFAULT_ENDPOINT = os.getenv("RECOMMENDER_URL", "http://localhost:5000/api/recommend")
-
+DEFAULT_ENDPOINT = os.getenv("RECOMMENDER_URL", "http://localhost:50023/api/recommend")
 
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
