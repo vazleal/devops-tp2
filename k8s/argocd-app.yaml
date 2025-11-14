@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: playlist-recommender
+  name: playlist-recommender-vazleal
   namespace: argocd
 spec:
   project: matheuslima-project
